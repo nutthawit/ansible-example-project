@@ -1,0 +1,4 @@
+---
+- name: "SSH to target host"
+  shell: sshpass -p "{{ target_address }}" ssh "{{ target_user }}"@10.88.128.52
+  delegate_to: "{{ middle_address }}"
